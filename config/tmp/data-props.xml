@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+
+<properties>
+	<!-- URL for the server -->
+	<parameter name="DatabaseName" value = "tq_database" />
+	<parameter name="DatabaseSchema" value = "tq_proxy" />
+	<parameter name="ClientCacheSize" value = "8192" />
+
+</properties>

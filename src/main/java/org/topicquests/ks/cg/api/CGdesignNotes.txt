@@ -1,0 +1,58 @@
+CGs, in the vocabulary of Finnegan Southey's Notio program use these fundamental objects:
+
+Node -- a base object
+Concept -- extends Node
+Relation -- extends Node
+Graph -- extends nothing.
+
+A Graph is a container of Nodes and Relations.
+
+A CG looks like this:
+  [ CAT ] <- ( agent ) <- [ SIT ] -> ( loc ) -> [ MAT ]
+
+Where
+	[...] are concepts
+	(...) are relations
+	
+NOTE:
+	In topic maps vocabulary, "SIT" is a predicate, but it is used as a concept
+	just as TMRM topic maps make topics out of predicates.
+	In topic maps vocabulary, "agent" would be a *role*, but here, it is a connective
+	relation between concepts.
+	
+A Concept can have many relations.
+
+OBSERVATIONS
+	IN a conceptual graph, it appears that graphs can nest graphs
+	Notio's Graph object is only a container of Concepts and Relations
+	
+	Graphs contain internal Relations
+	Graphs can link to other Graphs
+	Graphs can contain Graphs (as above)
+GOAL
+	MAP CG design ideas to topic map design ideas.
+	
+GAME
+	We are defining objects by interface
+		Node --> INode
+		Concept --> IConcept
+		Relation --> IRelation
+		Graph --> IGraph
+IDEAS
+	1- Each time a topic is used as the subject of a concept:
+		An IConcept object is made with a Reference to that Proxy
+		A IConcept is thus a container of
+			TopicReference
+			In and Out edges based on Relations
+			What else?
+				What about provenance, biographies,etc?
+	2- It appears that IGraph should extend INode to support nesting graphs
+	3- Therefore, an IGraph should be a container of
+		INode objects
+		IRelation objects
+	4- An IRelation object contains
+		Reference to the topic which defines (gives identity to) it
+		Reference to its source (as in Out edge container)
+		Reference to its target (as in In edge container)
+		What else?
+			What about provenance, biographies, etc?

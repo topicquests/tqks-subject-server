@@ -1,0 +1,12 @@
+It should be possible to use IF-THEN rules to do this, something
+akin to ripple-down rules.
+
+AND-LIST
+If labels are the same
+Then true
+
+If taxonomy can merge
+ThenDo merge taxonomy
+Then true
+
+etc.

@@ -1,2 +1,2 @@
 # tqks-knowledge-server
-Topic Map, Conceptual Graph, PostgreSql, ElasticSearch, Kafka
+Topic Map, PostgreSql, ElasticSearch, Kafka

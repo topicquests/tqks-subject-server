@@ -1,0 +1,12 @@
+{ "nodes":[ {"lox":"JournalArticleType","sbOf":"NodeType","label":"Journal Article","details":"Journal Article","sIco":"/images/cogwheel_sm.png","lIco":"/images/cogwheel.png","trCl":["TypeType","ClassType"]},
+{"lox":"RshSupExtramuralType","sbOf":"NodeType","label":"JResearch Support, N.I.H., Extramural","details":"Research Support, N.I.H., Extramural","sIco":"/images/cogwheel_sm.png","lIco":"/images/cogwheel.png","trCl":["TypeType","ClassType"]},
+{"lox":"RshSupIntramuralType","sbOf":"NodeType","label":"Research Support, N.I.H., Intramural","details":"Research Support, N.I.H., Intramural","sIco":"/images/cogwheel_sm.png","lIco":"/images/cogwheel.png","trCl":["TypeType","ClassType"]},
+{"lox":"RshSupNonGovType","sbOf":"NodeType","label":"Research Support, Non-U.S. Gov't","details":"Research Support, Non-U.S. Gov't","sIco":"/images/cogwheel_sm.png","lIco":"/images/cogwheel.png","trCl":["TypeType","ClassType"]},
+{"lox":"RshSupGovNonPHSType","sbOf":"NodeType","label":"Research Support, U.S. Gov't, Non-P.H.S.","details":"Research Support, U.S. Gov't, Non-P.H.S.","sIco":"/images/cogwheel_sm.png","lIco":"/images/cogwheel.png","trCl":["TypeType","ClassType"]},
+{"lox":"RshSupGovPHS","sbOf":"NodeType","label":"Research Support, U.S. Gov't, P.H.S.","details":"Research Support, U.S. Gov't, P.H.S.","sIco":"/images/cogwheel_sm.png","lIco":"/images/cogwheel.png","trCl":["TypeType","ClassType"]},
+{"lox":"RshSupGovType","sbOf":"NodeType","label":"Research Support, U.S. Government","details":"Research Support, U.S. Government","sIco":"/images/cogwheel_sm.png","lIco":"/images/cogwheel.png","trCl":["TypeType","ClassType"]},
+{"lox":"RetractedPubType","sbOf":"NodeType","label":"Retracted Publication","details":"Retracted Publication","sIco":"/images/cogwheel_sm.png","lIco":"/images/cogwheel.png","trCl":["TypeType","ClassType"]},
+{"lox":"PublishedErratumType","sbOf":"NodeType","label":"Published Erratum","details":"Published Erratum","sIco":"/images/cogwheel_sm.png","lIco":"/images/cogwheel.png","trCl":["TypeType","ClassType"]},
+{"lox":"ReviewType","sbOf":"NodeType","label":"Review","details":"Review","sIco":"/images/cogwheel_sm.png","lIco":"/images/cogwheel.png","trCl":["TypeType","ClassType"]},
+{"lox":"SciIntegrityReviewType","sbOf":"NodeType","label":"Scientific Integrity Review","details":"Scientific Integrity Review","sIco":"/images/cogwheel_sm.png","lIco":"/images/cogwheel.png","trCl":["TypeType","ClassType"]}
+]}

@@ -1,0 +1,296 @@
+
+
+123400 :: verb :: means
+123400 :: verb :: can mean
+123400 :: verb :: will mean
+123400 :: verb :: contributes to
+123400 :: verb :: is associated with
+123400 :: verb :: is the main driver of
+123400 :: verb :: is a driver of
+123400 :: verb :: is accelerating
+123400 :: verb :: is linked to
+123400 :: verb :: leads to
+123400 :: verb :: can lead to
+123400 :: verb :: will lead to
+123400 :: verb :: is responsible for
+123401 :: verb :: is not responsible for
+123401 :: verb :: is not associated with
+123401 :: verb :: is not linked to
+123401 :: verb :: won't lead to
+123401 :: verb :: will not lead to
+123401 :: verb :: is not a driver of
+123401 :: verb :: doesn't cause
+123401 :: verb :: can't mean
+123401 :: verb :: cannot mean
+123401 :: verb :: doesn't mean
+123401 :: verb :: does not mean
+123402 :: verb :: inflated
+123402 :: verb :: inflates
+
+123420 :: verb :: is due to
+123421 :: verb :: is not due to
+123422 :: verb :: is not the only driver of
+123423 :: verb :: is chaotic
+123423 :: verb :: can be chaotic
+123424 :: verb :: is not chaotic
+123425 :: verb :: can be predicted
+123425 :: verb :: is predictable
+123426 :: verb :: cannot be predicted
+123426 :: verb :: can't be predicted
+123426 :: verb :: is not predictable
+123426 :: verb :: isn't predictable
+123427 :: verb :: show no trend over
+123427 :: verb :: show no trend during
+123428 :: verb :: show increasing trend over
+123428 :: verb :: show increasing trend during
+123429 :: verb :: show increasing trend over
+123429 :: verb :: show increasing trend during
+123430 :: verb :: have had little impact on
+123431 :: verb :: have had no impact on
+123432 :: verb :: involved
+123432 :: verb :: involves
+123432 :: verb :: included
+123432 :: verb :: includes
+123433 :: verb :: is irrelevant to
+123433 :: verb :: is irrelevant for
+123434 :: verb :: is correlated with
+123434 :: verb :: correlates with
+123435 :: verb :: is not correlated with
+123435 :: verb :: does not correlate with
+123436 :: verb :: has long term correlation with
+123436 :: verb :: have long term correlation with
+123437 :: verb :: has short term correlation with
+123437 :: verb :: have short term correlation with
+123438 :: verb :: has no short term correlation with
+123439 :: verb :: has no long term correlation with
+123440 :: verb :: confirms
+123441 :: verb :: is confirmed by
+123442 :: verb :: state that
+123443 :: verb :: is warming
+123444 :: verb :: isn't warming
+123444 :: verb :: is not warming
+123445 :: verb :: is cooling
+123446 :: verb :: isn't cooling
+123446 :: verb :: is not cooling
+123447 :: verb :: absorbed in
+123447 :: verb :: absorbed by
+123447 :: verb :: is absorbed in
+123447 :: verb :: is absorbed by
+123447 :: verb :: being absorbed in
+123447 :: verb :: being absorbed by
+123448 :: verb :: is not absorbed in
+123448 :: verb :: is not absorbed by
+123448 :: verb :: isn't absorbed in
+123448 :: verb :: isn't absorbed by
+
+
+
+
+
+15161 :: verb :: swims in
+15161 :: verb :: is swimming in
+#note that if the sentence has 'is gaining' 'gaining' will also fire; it's a test of the system whether that gets filtered out
+20005 :: verb :: is gaining
+20005 :: verb :: gaining
+20005 :: verb :: gained
+20005 :: verb :: has been gaining
+20006 :: verb :: is losing
+20006 :: verb :: losing
+20006 :: verb :: lost
+20006 :: verb :: has been losing
+20006 :: verb :: has only lost
+20006 :: verb :: has lost
+#some issues with 'lagging' as in 'lagging indicator'
+20007 :: verb :: lags
+20007 :: verb :: is lagging
+20008 :: verb :: leads
+20008 :: verb :: is leading
+
+
+
+
+20000 :: noun :: co2
+20000 :: noun :: CO2
+20000 :: noun :: carbon dioxide
+20000 :: noun :: Carbon dioxide
+20000 :: noun :: Carbon Dioxide
+21000 :: noun :: climate change
+22000  :: noun :: climate
+22000  :: noun :: Climate
+30000 :: noun :: elephant
+32000 :: noun :: parrot
+41000 :: noun :: some people
+41000 :: noun :: many people
+15100 :: verb :: believe
+50000 :: noun :: Temp
+50000 :: noun :: temp
+50000 :: noun :: Temperature
+50000 :: noun :: temperature
+50000 :: noun :: temperatures
+50000 :: noun :: global temperature
+50000 :: noun :: global temperatures
+50001 :: noun :: model
+50001 :: noun :: models
+50001 :: noun :: Model
+50001 :: noun :: Models
+50002 :: noun :: warming trend
+50002 :: noun :: Warming trend
+50002 :: noun :: warming
+50002 :: noun :: Warming
+50002 :: noun :: Global Warming
+50002 :: noun :: runaway warming
+50002 :: noun :: Global warming
+50002 :: noun :: global warming
+50003 :: noun :: cooling trend
+50003 :: noun :: Cooling trend
+50003 :: noun :: cooling
+50003 :: noun :: Cooling
+50003 :: noun :: Global Cooling
+50003 :: noun :: Global cooling
+50003 :: noun :: global cooling
+50005 :: noun :: recent global warming
+50006 :: noun :: global brightening
+
+50009 :: noun :: evidence
+50009 :: noun :: Evidence
+50010 :: noun :: increasing evidence
+50011 :: noun :: little evidence
+50012 :: noun :: decreasing evidence
+#messing with truth here
+50013 :: noun :: no evidence
+50014 :: noun :: ice age
+50014 :: noun :: Ice age
+50014 :: noun :: Ice Age
+50015 :: noun :: little ice age
+50015 :: noun :: Little ice age
+50015 :: noun :: Little Ice Age
+50016 :: noun :: 2nd law of thermodynamics
+50017 :: noun :: Pacific Decadal Oscillation
+50017 :: noun :: PDO
+50018 :: noun :: El Nino
+50018 :: noun :: El Niño
+50019 :: noun :: CO2 levels
+50019 :: noun :: CO2 level
+50020 :: noun :: IPCC
+50021 :: noun :: IPCC report
+#this is cheating!
+50028 :: noun :: UK
+50028 :: noun :: United Kingdom
+50028 :: noun :: England
+50029 :: noun :: OISM Petition Project
+50029 :: noun :: OISM petition
+50030 :: noun :: sun
+50031 :: noun :: solar cycle
+50031 :: noun :: solar cycles
+50031 :: noun :: Solar cycles
+50032 :: noun :: solar energy
+50032 :: noun :: Solar energy
+50032 :: noun :: solar output
+50032 :: noun :: sun's output
+##50032 :: noun :: sun’s output
+50032 :: noun :: solar radiation
+50033 :: noun :: Southern sea ice
+50033 :: noun :: southern sea ice
+50033 :: noun :: Antarctic sea ice
+50034 :: noun :: Greenland
+50035 :: noun :: Greenland's ice
+50036 :: noun :: Greenland's ice loss
+50037 :: noun :: CO2 rise
+50037 :: noun :: CO2 increase
+50037 :: noun :: rising CO2
+50037 :: noun :: rise in atmospheric CO2
+50037 :: noun :: rise in CO2
+50037 :: noun :: increasing CO2
+50038 :: noun :: CO2 drop
+50038 :: noun :: CO2 fall
+50038 :: noun :: falling CO2
+50038 :: noun :: dropping CO2
+50039 :: noun :: recent warming
+50039 :: noun :: Recent warming
+50040 :: noun :: Positive feedback
+50040 :: noun :: positive feedback
+50041 :: noun :: negative feedback
+50041 :: noun :: negative feedback
+50042 :: noun :: Human activity
+50042 :: noun :: human activity
+50043 :: noun :: sea level rise
+50043 :: noun :: rising sea level
+50043 :: noun :: increasing sea level
+50043 :: noun :: increased sea level
+50044 :: noun :: cosmic rays
+50044 :: noun :: Cosmic rays
+50045 :: noun :: last 30 years
+50046 :: noun :: humans
+50046 :: noun :: Humans
+50047 :: noun :: weather
+50047 :: noun :: Weather
+50047 :: noun :: CO2 emissions
+50047 :: noun :: Carbon dioxide emissions
+50047 :: noun :: carbon dioxide emissions
+50047 :: noun :: CO2 concentration
+50047 :: noun :: CO2 buildup
+50047 :: noun :: Carbon dioxide concentration
+50047 :: noun :: carbon dioxide concentration
+50048 :: noun :: isotopic analyses
+50049 :: noun :: Royal Society
+50050 :: noun :: arctic region
+50050 :: noun :: arctic area
+50050 :: noun :: arctic
+50050 :: noun :: Arctic
+50051 :: noun :: satellite
+50051 :: noun :: Satellite
+50051 :: noun :: satellites
+50051 :: noun :: Satellites
+50052 :: noun :: satellite error
+50052 :: noun :: Satellite error
+50053 :: noun :: satellite measurement
+50053 :: noun :: satellite measurements
+50053 :: noun :: satellite temperature measurement
+50053 :: noun :: satellite temperature measurements
+50054 :: noun :: melting ice
+50054 :: noun :: ice melt
+50054 :: noun :: Melting ice
+50055 :: noun :: Freezing ice
+50055 :: noun :: freezing ice
+50055 :: noun :: ice buildup
+50055 :: noun :: ice pack
+50056 :: noun :: Breathing
+50057 :: noun :: Satellite transmissions
+50057 :: noun :: Satellite microwave transmissions
+50057 :: noun :: satellite transmissions
+50057 :: noun :: satellite microwave transmissions
+50058 :: noun :: Water vapor
+50058 :: noun :: Water vapor in the atmosphere
+50058 :: noun :: Atmospheric water vapor
+50058 :: noun :: water vapor
+50058 :: noun :: water vapor in the atmosphere
+50058 :: noun :: atmospheric water vapor
+50059 :: noun :: in 2007
+50060 :: noun :: 2007
+50061 :: noun :: cycle
+50062 :: noun :: natural cycle
+50063 :: noun :: ice
+50063 :: noun :: Ice
+50064 :: noun :: Climate experts
+50064 :: noun :: climate experts
+
+#people related
+70000 :: noun :: Lindzen and Choi
+70010 :: noun :: Mike's
+70010 :: noun :: Michael Mann
+#this is cheating!
+70020 :: noun :: Hansen's
+70020 :: noun :: Jim Hansen
+70030 :: noun :: Phil Jones
+70040 :: noun :: Naomi Oreskes
+70050 :: noun :: Benny Peiser
+70060 :: noun :: Monckton
+
+60000 :: noun :: increasing
+60001 :: noun :: increasing rapidly
+60001 :: noun :: rapidly increasing
+60002 :: noun :: not increasing
+60000 :: noun :: decreasing
+60001 :: noun :: decreasing rapidly
+60001 :: noun :: rapidly decreasing
+60002 :: noun :: not decreasing

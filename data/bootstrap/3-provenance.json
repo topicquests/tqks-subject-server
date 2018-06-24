@@ -1,0 +1,6 @@
+{"nodes":[ 
+	{"lox":"ProvenanceType", "sbOf":"TypeType", "label":"Provenance type","details":"Topic Map provenance class","sIco":"/images/cogwheel_sm.png","lIco":"/images/cogwheel.png"},
+	{"lox":"BootstrapProvenanceType", "sbOf":"ProvenanceType", "label":"Bootstrap Provenance type","details":"Provenance is asserted as designed into bootstrapped classes.","sIco":"/images/cogwheel_sm.png","lIco":"/images/cogwheel.png"},
+	{"lox":"MergeProvenanceType", "sbOf":"ProvenanceType", "label":"Merge Provenance type","details":"Provenance is asserted with merge reasons.","sIco":"/images/cogwheel_sm.png","lIco":"/images/cogwheel.png"}
+
+]}

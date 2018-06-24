@@ -1,0 +1,7 @@
+{"nodes":[
+{"lox":"HarvestedClassType","sbOf":"ClassType", "label":"Harvested Class type","details":"Harvested Class","sIco":"/images/cogwheel_sm.png","lIco":"/images/cogwheel.png","trCl":["TypeType"]},
+{"lox":"ClusterType","sbOf":"ClassType", "label":"ClusterType","details":"Cluster type","sIco":"/images/cogwheel_sm.png","lIco":"/images/cogwheel.png","trCl":["TypeType"]},
+{"lox":"SentenceIdScopePropertyType","sbOf":"PropertyType","label":"SentenceIdScopePropertyType","details":"Sentence Id Scope Property","sIco":"/images/snowflake_sm.png","lIco":"/images/snowflake.png","trCl":["TypeType"]},          
+{"lox":"ClusterScoreProperty","sbOf":"PropertyType","label":"ClusterScoreProperty","details":"Cluster Score Property","sIco":"/images/snowflake_sm.png","lIco":"/images/snowflake.png","trCl":["TypeType"]} 
+]          
+}

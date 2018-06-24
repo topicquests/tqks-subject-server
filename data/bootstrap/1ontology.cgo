@@ -1,0 +1,268 @@
+#Type Lattice
+#TYPE, SUPER, SUPER, ...
+#http://oatao.univ-toulouse.fr/8390/1/Kamsu_Foguem_8390.pdf
+
+T
+ATTRIBUTE, T
+ENTITY, T
+EVENT, T
+INFORMATION, T
+MEASURE, T
+STATE, T
+
+CHARACTERISTIC, ATTRIBUTE
+
+COLOR, ATTRIBUTE
+
+IMAGE, ENTITY
+#not in sowa
+
+AGE, CHARACTERISTIC 
+
+DIMENSION, CHARACTERISTIC
+#not in sowa
+
+MANNER, CHARACTERISTIC
+#not in sowa
+
+LOCATION, CHARACTERISTIC
+#not in sowa
+
+PLACE, LOCATION
+#not in sowa
+
+DIFFICULT, MANNER
+
+EASY, MANNER
+#not in sowa
+
+MOBILE_ENTITY, ENTITY
+
+ANIMATE, ENTITY  
+
+ROBOT, MOBILE_ENTITY
+
+PHYSOBJ, ENTITY
+
+ANIMAL, ANIMATE, MOBILE_ENTITY, PHYSOBJ
+
+ANGEL, ANIMATE, MOBILE_ENTITY
+
+MAMMAL, ANIMAL
+#not in sowa
+
+#PERSON, ANIMAL
+PERSON, MAMMAL
+#not in sowa
+
+PARENT, PERSON
+CHILD, PERSON
+#not in sowa
+
+EMPLOYEE, PERSON
+#not in sowa
+
+MANAGER, EMPLOYEE
+#not in sowa
+
+Junior_Employee, Employee
+#polovina 2007
+Senior_Employee, Employee
+#polovina 2007
+Director, Employee
+#polovina 2007
+
+COMPANY < ENTITY
+#from polovina 2007
+
+COMPANY_POLICY, COMPANY, POLICY
+#polovina 2007
+
+ONE, CHARACTERISTIC
+#not in sowa
+MANY, CHARACTERISTIC
+#not in sowa
+SOCIETY, MANY, PERSON
+#not in sowa
+
+CITY, PLACE, SOCIETY
+#not in sowa
+
+
+
+ROBOT, MACHINE, MOBILE_ENTITY
+
+TOOL, ENTITY
+
+MACHINE, PHYSOBJ
+#not in sowa
+
+TELEPHONE, PHYSOBJ
+
+FOOD, PHYSOBJ
+#not in sowa
+
+CAKE, FOOD
+#not in sowa
+
+STUFF, PHYSOBJ
+#not in sowa
+
+HARDWARE, STUFF
+
+TOOL, JACK
+
+EVENT, ACT
+
+ARRIVE, ACT
+CHANGE, EVENT
+#not in sowa
+
+CHASE, ACT
+CUT, ACT
+GIVE, ACT
+GO, ACT
+#not in sowa
+
+LAY, ACT
+LEARN, ACT
+PROCESS, ACT
+#not in sowa
+
+REQUEST, ACT
+#not in sowa
+
+FUNDING_REQUEST, REQUEST
+#polovina 2007
+#[Funding_Request] –
+# (initiator) -> [Employee]
+# (rslt) <– [Company_Policy]
+
+RECEIVE, ACT
+SET, ACT
+TEACH, ACT
+THINK, ACT
+USE, ACT
+WEAR, ACT
+WORK, ACT
+BUY, ACT
+#hensman&dunnion 2005
+SELL, ACT
+#hensman&dunnion 2005
+GIVE, ACT
+#not in sowa
+#TRADE, ACT
+#need to think about that one
+#general notion of transaction
+#TRANSACTION, ACT
+#BUY, TRANSACTION
+#SELL, TRANSACTION
+#what do you gain by adding the transaction?
+
+#from hensman&dunnion 2005
+#Agent[+animate OR +organization]
+#Theme[]
+#Source[+concrete]
+#Beneficiary[+animate OR +organization]
+#Asset[+currency]
+
+LOCATION_CHANGE, CHANGE, LOCATION
+#not in sowa
+
+TRANSPORT, PROCESS, LOCATION_CHANGE
+#not in sowa
+
+
+HOMEWORK, WORK
+
+MESSAGE, INFORMATION
+PROPOSITION, INFORMATION
+
+SITUATION, INFORMATION
+#not in sowa
+
+MESSAGE, COMMAND
+
+PROPOSITION, THOUGHT
+
+BELIEVE, STATE
+COLD, STATE
+WARM, STATE
+CONTAIN, STATE
+KNOW, STATE
+LOVE, STATE
+POLICY, STATE
+#polovina 2007
+EMPLOYMENT, STATE
+HIGH, STATE
+#Boytcheva&Angelova
+LOW, STATE
+#Boytcheva&Angelova
+ELEVATED, STATE
+#Boytcheva&Angelova guessing
+CONDITION, STATE
+#Boytcheva&Angelova 2009 guessing
+MEDICAL_CONDITION, CONDITION
+DISEASE, STATE
+#Boytcheva&Angelova guessing
+#[HAVE]->(AGNT)->[PERSON] ->(THME)->[Disease]->(CHAR)->[Diabetes] 
+#						  ->(THME)->[SYMPTOM]-
+#                                            ->(CHAR)->[Weakness]->(ATTR)->[General] 
+#											 ->(CHAR)->[Acetonoria]
+#											 ->(CHAR)->[Blood preasure]->(ATTR)->[High] 
+#											 ->(CHAR)->[Sickness]->(ATTR)->[since few days ago]
+#That one suggests a type: COMMENT
+#Boytcheva&Angelova 2009 guessing
+#polovina 2007
+#([Person:*x] <- (experiencer) <- [Employment] ([Employee:*x])).
+HAVE, STATE
+#Boytcheva&Angelova 2009
+SYMPTOM, CHARACTERISTIC
+#Boytcheva&Angelova 2009
+BLOOD_PRESSURE, CHARACTERISTIC
+#Boytcheva&Angelova 2009 guessing
+#[HAVE]->(AGNT)->[PERSON]
+#->(THME)->[SYMPTOM]->(CHAR)->[CONCEPT]
+#                   ->(ATTR)->[CONDITION] ???what to do with condition?
+# 										 ->(CHAR)->[BLOOD_PRESSURE]->(ATTR)->[HIGH]
+#that needs work; seems weak
+
+MEASURE, MAGNITUDE
+#Sowa didn't link MAGNITUDE to MEASURE
+
+BIG MAGNITUDE 
+
+SMALL, MAGNITUDE
+#not in sowa
+
+INTERIOR, ENTITY
+
+EXTERIOR, ENTITY
+#not in sowa
+
+TEACHER, PERSON
+
+LEARNER, PERSON
+#not in sowa
+
+SPEAKER, PERSON
+#not in sowa
+
+LISTENER, PERSON
+#not in sowa
+
+#ambiguous in sowa
+# WEAR-OUT < PROCESS
+# UNICORN < MAMMAL, MYTHICAL-CREATURE MAMMAL & MYTHICAL-CREATURE not located
+# SHIPMENT < TRANSPORT  TRANSPORT not located
+# CAKE < FOOD, PHYSOBJ  FOOD not located
+# CAKE-STUFF < FOOD, STUFF
+# CITY < PLACE, SOCIETY
+# HARDWARE < STUFF
+#TODO
+#PROCESS, ACT, EVENT
+#PHYSICAL_PROCESS, PROCESS
+#MENTAL_PROCESS, PROCESS
+#BIOLOGICAL_PROCESS, PHYSICAL_PROCESS
+#CHEMICAL_PROCESS, PHYSICAL_PROCESS
+#SOCIAL_PROCESS, MENTAL_PROCESS, PHYSCAL_PROCESS, SOCIETY

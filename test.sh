@@ -1,0 +1,1 @@
+java -cp ./target/pg-tmx-0.7.0-SNAPSHOT.jar devtests/TestHarness

@@ -1,0 +1,5 @@
+<?xml version="1.0" ?>
+
+<properties>
+	<parameter name="StatsPath" value="data/SystemStatistics.json" /> <!-- change as needed -->
+</properties>

@@ -1,0 +1,55 @@
+{
+	"core": {
+		"properties": {
+			"lox": {
+				"index": "true",
+				"type": "keyword",
+				"store": true
+			},
+			"label": {
+				"properties": {
+					"en": {
+						"index": "true",
+						"type": "text",
+						"analyzer": "english",
+						"store": true
+					},
+					"fr": {
+						"index": "true",
+						"type": "text",
+						"analyzer": "french",
+						"store": true
+					},
+					"de": {
+						"index": "true",
+						"type": "text",
+						"analyzer": "german",
+						"store": true
+					}
+				}
+			},
+			"details": {
+				"properties": {
+					"en": {
+						"index": "true",
+						"type": "text",
+						"analyzer": "english",
+						"store": true
+					},
+					"fr": {
+						"index": "true",
+						"type": "text",
+						"analyzer": "french",
+						"store": true
+					},
+					"de": {
+						"index": "true",
+						"type": "text",
+						"analyzer": "german",
+						"store": true
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,11 @@
+{"nodes":[ 
+  {"lox":"CGConceptNodeType", "sbOf":"NodeType","label":"CG Concept Node Type","details":"Conceptual Graph concept node","sIco":"/images/cogwheel_sm.png","lIco":"/images/cogwheel.png","trCl":["TypeType","ClassType"]},
+  {"lox":"CGRelationNodeType", "sbOf":"NodeType","label":"CG Relation Node Type","details":"Conceptual Graph relation node","sIco":"/images/cogwheel_sm.png","lIco":"/images/cogwheel.png","trCl":["TypeType","ClassType"]},
+  {"lox":"CGGraphNodeType", "sbOf":"NodeType","label":"CG Graph Node Type","details":"Conceptual Graph graph node","sIco":"/images/cogwheel_sm.png","lIco":"/images/cogwheel.png","trCl":["TypeType","ClassType"]},
+
+  {"lox":"SowaBootstrapProvenanceType", "sbOf":"ProvenanceType", "label":"Sowa Bootstrap Provenance type","details":"Provenance is asserted as based on literature by John F. Sowa.","sIco":"/images/cogwheel_sm.png","lIco":"/images/cogwheel.png"},
+
+  {"lox":"CGRelationType", "sbOf":"RelationType","label":"CG Relation Type","details":"CG Relation type","sIco":"/images/snowflake_sm.png","lIco":"/images/snowflake.png","trCl":["TypeType"]},
+  {"lox":"CG_Topic_Relation", "sbOf":"RelationType","label":"CG-Topic Relation Type","details":"Relation between a CG and a Topic","sIco":"/images/snowflake_sm.png","lIco":"/images/snowflake.png","trCl":["TypeType"]}
+
+]}

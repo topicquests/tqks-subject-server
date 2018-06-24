@@ -1,0 +1,51 @@
+{
+    "core": {
+        "properties": {
+            "lox": {
+                "index": "false",
+                "type": "text",
+                "store": true
+            },
+            "inOf": {
+                "index": "false",
+                "type": "text",
+                "store": true
+            },
+            "InVertexId": {
+                "index": "false",
+                "type": "text",
+                "store": true
+            },
+            "OutVertexId": {
+                "index": "false",
+                "type": "text",
+                "store": true
+            },
+            "label": {
+                "index": "true",
+                "type": "text",
+                "store": true
+            },
+            "_ver": {
+                "index": "false",
+                "type": "text",
+                "store": true
+            },
+            "lists": {
+                "properties": {
+                    "inEdgeIdList": {
+                        "index": "false",
+                        "type": "text",
+                        "store": true
+                    },
+                    "outEdgeIdList": {
+                        "index": "false",
+                        "type": "text",
+                        "store": true
+                    }
+                }
+            }
+        }
+    }
+
+}
