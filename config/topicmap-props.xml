@@ -26,6 +26,17 @@
 	
 	<parameter name="SameLabelPath" value="/data/SameLabels.json" /> <!-- change as needed -->
 
+	<!-- if there is a tqos-asr-statistics-server running
+		then these parameters are in play. If not this value
+		should be "F" -->
+	<parameter name="HaveRemoteStatistics" value="T" />
+	<!-- this server commmunicates with the Statistics Server -->
+	<parameter name="StatServerURl" value="localhost" /> <!--  coordinate with StatServer -->
+	<parameter name="StatServerPort" value="6900" /> <!-- coordinate with StatServer -->
+	<parameter name="StatServerClientId" value = "changeme" /> <!-- coordinate with StatServer -->
+	
+	
+	
 	<!-- 
 		Allows for a plug-in dataprovider
 		 -->

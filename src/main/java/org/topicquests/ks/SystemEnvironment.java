@@ -22,6 +22,8 @@ import org.topicquests.ks.tm.api.ITupleQuery;
 import org.topicquests.ks.tm.api.IVirtualizer;
 import org.topicquests.ks.tm.merge.DefaultVirtualizer;
 import org.topicquests.ks.tm.merge.VirtualizerHandler;
+import org.topicquests.os.asr.StatisticsHttpClient;
+import org.topicquests.os.asr.api.IStatisticsClient;
 import org.topicquests.es.ProviderEnvironment;
 import org.topicquests.support.api.IEnvironment;
 
@@ -33,7 +35,7 @@ public class SystemEnvironment extends RootEnvironment  {
   private ProviderEnvironment esProvider;  // Elasticsearch provider
   private IProxyModel proxyModel;
   // private VirtualizerHandler virtualizerHandler = null;
-  private StatisticsUtility stats;
+  private IStatisticsClient stats;
   private JSONBootstrap jsonBootstrapper;
   // private IExtendedConsoleDisplay console;
   // private SearchEnvironment searchEnvironment;
@@ -55,7 +57,12 @@ public class SystemEnvironment extends RootEnvironment  {
     
     try {
       esProvider = new ProviderEnvironment();
-      stats = StatisticsUtility.getInstance();
+      String hs = getStringProperty("HaveRemoteStatistics");
+      boolean hasRemoteStats = hs.equalsIgnoreCase("T");
+      if (hasRemoteStats)
+  		 stats = new StatisticsHttpClient(this);
+      else
+    	  stats = StatisticsUtility.getInstance();
       kafka = new KafkaEnvironment(this);
       kProducer = kafka.getProducer();
       //eventHandler = new ProxyEventHandler(this);
@@ -128,7 +135,7 @@ public class SystemEnvironment extends RootEnvironment  {
   //   return virtualizerHandler;
   // }
 	
-  public StatisticsUtility getStats() {
+  public IStatisticsClient getStats() {
     return stats;
   }
 		
@@ -146,7 +153,6 @@ public class SystemEnvironment extends RootEnvironment  {
     virtualizerHandler.shutDown();
     try {
       //eventHandler.shutDown();
-      stats.saveData();
       kafka.shutDown();
       esProvider.shutDown();
       

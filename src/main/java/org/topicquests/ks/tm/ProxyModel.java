@@ -29,6 +29,8 @@ import org.topicquests.ks.tm.api.IParentChildContainer;
 import org.topicquests.ks.tm.api.IProxy;
 import org.topicquests.ks.tm.api.IProxyModel;
 import org.topicquests.ks.tm.api.ITuple;
+import org.topicquests.os.asr.api.IStatisticsClient;
+import org.topicquests.os.asr.common.api.IASRFields;
 import org.topicquests.pg.api.IPostgresConnection;
 
 public class ProxyModel implements IProxyModel {
@@ -36,9 +38,11 @@ public class ProxyModel implements IProxyModel {
   private DataProvider database;
   private ITicket credentials;
   private final String USER_ID = ITQCoreOntology.SYSTEM_USER;
+  private IStatisticsClient stats;
 
   public ProxyModel(SystemEnvironment env, DataProvider db) {
     environment = env;
+    stats = environment.getStats();
     database = db;
     credentials = new TicketPojo(ITQCoreOntology.SYSTEM_USER);
   }
@@ -85,6 +89,7 @@ public class ProxyModel implements IProxyModel {
       result.addDetails(description, lang);
     result.setIsPrivate(isPrivate);
     result.setVersion(Long.toString(System.currentTimeMillis()));
+    stats.addToKey(IASRFields.TOPICS);
     return result;
   }
 

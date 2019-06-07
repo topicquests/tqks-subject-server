@@ -96,7 +96,9 @@ public class MergeTest_1 implements IMergeResultsListener {
 //B {"crtr":"SystemUser","_ver":"1523219371641","lEdDt":"2018-04-08T13:29:31-07:00","tupST":"NodeType","label":{"en":["Addresses"]},"tupOT":"NodeType","crDt":"2018-04-08T13:29:31-07:00","trCl":["TypeType","RelationType","AddressesRelationType"],"tupS":"83724a26-592b-4165-b32e-8a5a3f16a2f3","node_type":"AddressesRelationType","isTrcld":"false","lox":"83724a26-592b-4165-b32e-8a5a3f16a2f3AddressesRelationTypeb40b1a76-24ee-4dfc-aff3-94b84063f91e","tupO":"b40b1a76-24ee-4dfc-aff3-94b84063f91e","isPrv":false,"details":{"en":["Relate existing nodes:<br\/>Test class 1<br\/> with<\/br> Test class 3<br\/>with the relation: AddressesRelationType"]}}
 
 	@Override
-	public void acceptMergeResults(String virtualNodeLocator, String originalLocator, String errorMessages) {
+	public void acceptMergeResults(String virtualNodeLocator,
+            String originalLocator,
+            String errorMessages) {
 		System.out.println("C "+virtualNodeLocator+" | "+originalLocator+" | "+errorMessages);
 	    if (virtualNodeLocator != null) {
 	    	IResult r = database.getFullNodeJSON(virtualNodeLocator);
