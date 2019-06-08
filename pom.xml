@@ -45,6 +45,16 @@
     </repositories>
     <build>
         <plugins>
+         <!-- required for jdk > 1.8 -->
+       <plugin>
+       		<groupId>org.apache.maven.plugins</groupId>
+       		<artifactId>maven-compiler-plugin</artifactId>
+       		<configuration>
+           		<source>1.6</source>
+           		<target>1.6</target>
+       		</configuration>
+		</plugin>
+ 
             <plugin>
                 <groupId>org.sonatype.plugins</groupId>
                 <artifactId>nexus-staging-maven-plugin</artifactId>
@@ -134,6 +144,7 @@
         </plugins>
     </build>
     <dependencies>
+    
       <dependency>
         <groupId>org.topicquests</groupId>
         <artifactId>tqks-common</artifactId>
