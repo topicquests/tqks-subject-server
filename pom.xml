@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.topicquests</groupId>
     <artifactId>tqks-subject-server</artifactId>
-    <version>0.9.0-SNAPSHOT</version>
+    <version>0.10.0-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>tqks-subject-server</name>
     <description>TopicMap with PostgreSQL</description>
@@ -153,7 +153,7 @@
       <dependency>
         <groupId>org.topicquests</groupId>
         <artifactId>tq-support</artifactId>
-        <version>1.7.3-SNAPSHOT</version>
+        <version>1.8.0-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>org.topicquests</groupId>
@@ -179,11 +179,6 @@
         <groupId>com.google.guava</groupId>
         <artifactId>guava</artifactId>
         <version>19.0</version>
-      </dependency>
-      <dependency>
-        <groupId>net.minidev</groupId>
-        <artifactId>json-smart</artifactId>
-        <version>2.2.1</version>
       </dependency>
       <dependency>
         <groupId>net.minidev</groupId>
