@@ -158,7 +158,7 @@
       <dependency>
         <groupId>org.topicquests</groupId>
         <artifactId>tqks-postgresql-provider</artifactId>
-        <version>0.9.0-SNAPSHOT</version>
+        <version>0.10.0-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>org.topicquests</groupId>
@@ -171,19 +171,9 @@
         <version>0.4.0-SNAPSHOT</version>
       </dependency>
       <dependency>
-	<groupId>org.postgresql</groupId>
-	<artifactId>postgresql</artifactId>
-	<version>42.2.1</version>
-      </dependency>
-      <dependency>
         <groupId>com.google.guava</groupId>
         <artifactId>guava</artifactId>
         <version>19.0</version>
-      </dependency>
-      <dependency>
-        <groupId>net.minidev</groupId>
-        <artifactId>accessors-smart</artifactId>
-        <version>1.1</version>
       </dependency>
       <dependency>
 	<groupId>org.junit.jupiter</groupId>
@@ -200,17 +190,17 @@
       <dependency>
       	<groupId>org.topicquests</groupId>
       	<artifactId>tqks-statistics</artifactId>
-      	<version>1.2.0-SNAPSHOT</version>
+      	<version>1.3.0-SNAPSHOT</version>
       </dependency>
       <dependency>
       	<groupId>org.topicquests</groupId>
       	<artifactId>tqos-asr-statistics-client</artifactId>
-      	<version>0.1.0-SNAPSHOT</version>
+      	<version>0.3.0-SNAPSHOT</version>
       </dependency>
       <dependency>
       	<groupId>org.topicquests</groupId>
       	<artifactId>tqos-asr-common</artifactId>
-      	<version>0.1.0-SNAPSHOT</version>
+      	<version>0.2.0-SNAPSHOT</version>
       </dependency>
     </dependencies>
     <inceptionYear>2018</inceptionYear>
