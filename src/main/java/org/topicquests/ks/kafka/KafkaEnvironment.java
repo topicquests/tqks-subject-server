@@ -20,7 +20,7 @@ public class KafkaEnvironment extends RootEnvironment {
 	 * @param logConfigPath
 	 */
 	public KafkaEnvironment(SystemEnvironment env) {
-		super("kafka-topics", "logger.properties");
+		super("kafka-topics.xml", "logger.properties");
 		topicMapEnvironment  = env;
 		String clientId = "tmProducer"+Long.toString(System.currentTimeMillis());
 		producer = new KafkaProducer(this, clientId);
