@@ -15,7 +15,7 @@ public class TestHarness {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-          //new BootTest();
+          new BootTest();
           //new ProxyFetchTest();
           //new TextQueryTest_1();
           //new SubclassTest();
@@ -36,7 +36,7 @@ public class TestHarness {
 		//new ConversationTest();
 		//new AddTextFieldsTest();
 		//new FirstCGTest();
-		new SecondCGTest();
+		//new SecondCGTest();
 	}
 
 }

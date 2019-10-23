@@ -11,7 +11,6 @@ import org.topicquests.backside.kafka.producer.MessageProducer;
 import org.topicquests.ks.cg.CGImporter;
 import org.topicquests.ks.cg.CGModel;
 import org.topicquests.ks.cg.api.ICGModel;
-import org.topicquests.ks.kafka.KafkaEnvironment;
 import org.topicquests.ks.kafka.KafkaProducer;
 import org.topicquests.ks.tm.DataProvider;
 import org.topicquests.ks.tm.JSONBootstrap;
@@ -46,10 +45,9 @@ public class SystemEnvironment extends RootEnvironment  {
   private IVirtualizer virtualizer;
   private ICGModel cgModel;
   private KafkaProducer kProducer;
-  private KafkaEnvironment kafka;
   
   public SystemEnvironment() {
-    this(null);
+    this("ttq_contents");
   }
   
   public SystemEnvironment(String schemaName) {
@@ -63,8 +61,9 @@ public class SystemEnvironment extends RootEnvironment  {
   		 stats = new StatisticsHttpClient(this);
       else
     	  stats = StatisticsUtility.getInstance();
-      kafka = new KafkaEnvironment(this);
-      kProducer = kafka.getProducer();
+	  String clientId = "tmProducer"+Long.toString(System.currentTimeMillis());
+
+      kProducer = new KafkaProducer(this, clientId);
       //eventHandler = new ProxyEventHandler(this);
       // queryDSL = new ElasticQueryDSL(this);
       dataProvider = new DataProvider(this, schemaName);
@@ -154,7 +153,7 @@ public class SystemEnvironment extends RootEnvironment  {
     virtualizerHandler.shutDown();
     try {
       //eventHandler.shutDown();
-      kafka.shutDown();
+      kProducer.close();
       esProvider.shutDown();
       
       if (dataProvider != null)

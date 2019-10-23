@@ -6,21 +6,22 @@
 package org.topicquests.ks.kafka;
 
 import org.topicquests.backside.kafka.producer.MessageProducer;
+import org.topicquests.support.api.IEnvironment;
 
 /**
  * @author Admin
  *
  */
 public class KafkaProducer extends MessageProducer {
-  private KafkaEnvironment environment;
 	private final String MY_TOPIC;
 
   /**
    * @param env
    */
-  public KafkaProducer(KafkaEnvironment env, String clientId) {
+  public KafkaProducer(IEnvironment env, String clientId) {
     super(env, clientId);
-	MY_TOPIC = environment.getStringProperty("TopicMapProducerTopic");
+    System.out.println("KafkaProducer "+env+" | "+environment);
+	MY_TOPIC = env.getStringProperty("TopicMapProducerTopic");
   }
 
   /**
