@@ -6,7 +6,7 @@
 package org.topicquests.ks.cg;
 
 import java.io.File;
-import java.util.StringTokenizer;
+import java.util.*;
 
 import org.topicquests.ks.SystemEnvironment;
 import org.topicquests.ks.TicketPojo;
@@ -58,6 +58,7 @@ public class CGImporter {
 		//see if relations are booted
 		String lox = "CG_ACCM_RELATION";
 	    IResult r = dataProvider.getNode(lox, credentials);
+	    List<String> fnames = new ArrayList<String>();
 	    if (r.hasError())
 	      result.addErrorString(r.getErrorString());
 	    environment.logDebug("CGImporter-1 "+r.getErrorString()+" | "+r.getResultObject());
@@ -72,16 +73,18 @@ public class CGImporter {
 	        for (int i = 0; i < len; i++) {
 	          f = files[i];
 	          System.out.println(f.getAbsolutePath());
-	          if (f.getName().endsWith(".cgr")) {
-	            r = importRelationFile(f);
-	            if (r.hasError())
-	              result.addErrorString(r.getErrorString());
-	          } else if (f.getName().endsWith(".cg")) {
-	        	//  r = importCGFile(f);
-	      	    //        if (r.hasError())
-	      	    //          result.addErrorString(r.getErrorString());
-	          } else if (f.getName().endsWith(".cgo")) {
-	        	  //TODO
+	          if (!fnames.contains(f.getName())) {
+		          if (f.getName().endsWith(".cgr")) {
+		            r = importRelationFile(f);
+		            if (r.hasError())
+		              result.addErrorString(r.getErrorString());
+		          } else if (f.getName().endsWith(".cg")) {
+		        	//  r = importCGFile(f);
+		      	    //        if (r.hasError())
+		      	    //          result.addErrorString(r.getErrorString());
+		          } else if (f.getName().endsWith(".cgo")) {
+		        	  //TODO
+		          }
 	          }
 	        }
 	      } else {
@@ -150,7 +153,7 @@ public class CGImporter {
 	 * @param r
 	 */
 	void processRelation(String line, IResult r) {
-		System.out.println("CGIImporter.processRelation- "+line);
+		environment.logDebug("CGIImporter.processRelation- "+line);
 		String [] words = splitOnCommas(line);
 		String locator = model.relationToLocator(words[0]);
 		String label = words[1].trim();

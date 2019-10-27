@@ -676,6 +676,7 @@ public class DataProvider extends RootEnvironment implements IDataProvider {
 
   @Override
   public JSONObject fetchLabels(String locator) {
+	  environment.logDebug("DataProvider.fetchLabels "+locator);
     JSONObject result = null;
     IResult r = esProvider.getProvider().get(locator, _INDEX);
     JSONObject jo = (JSONObject)r.getResultObject();

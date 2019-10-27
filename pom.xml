@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.topicquests</groupId>
     <artifactId>tqks-subject-server</artifactId>
-    <version>0.12.0-SNAPSHOT</version>
+    <version>0.12.1-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>tqks-subject-server</name>
     <description>TopicMap with PostgreSQL</description>

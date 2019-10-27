@@ -47,7 +47,7 @@ public class SystemEnvironment extends RootEnvironment  {
   private KafkaProducer kProducer;
   
   public SystemEnvironment() {
-    this("ttq_contents");
+    this("tq_contents");
   }
   
   public SystemEnvironment(String schemaName) {
@@ -144,8 +144,9 @@ public class SystemEnvironment extends RootEnvironment  {
   public void bootstrap() {
     JSONBootstrap bs = new JSONBootstrap(this);
     IResult r = bs.bootstrap();
-    CGImporter cgi = new CGImporter(this);
-    r = cgi.bootstrap();
+    //TODO for the time being, shut off CG importing
+//    CGImporter cgi = new CGImporter(this);
+//    r = cgi.bootstrap();
   }
   
   @Override
