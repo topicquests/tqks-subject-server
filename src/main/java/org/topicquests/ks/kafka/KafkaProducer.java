@@ -19,7 +19,7 @@ public class KafkaProducer extends MessageProducer {
    * @param env
    */
   public KafkaProducer(IEnvironment env, String clientId) {
-    super(env, clientId);
+    super(env, clientId, true);
     System.out.println("KafkaProducer "+env+" | "+environment);
 	MY_TOPIC = env.getStringProperty("TopicMapProducerTopic");
   }
